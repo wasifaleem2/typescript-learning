@@ -1,0 +1,137 @@
+.open-button {
+  position: fixed;
+  height: 30px;
+  width: 300px;
+  background-color: pink;
+  bottom: 0;
+  right: 20px;
+  border: none;
+  color: #fff;
+  font-size: large;
+  font-weight: 700;
+}
+.ob2, .c2{
+    left: 20px !important;
+    background-color: skyblue !important;
+}
+.chat {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(185, 185, 185);
+  bottom: 0;
+  right: 20px;
+  animation: open 1s;
+  /* animation-direction: alternate; */
+}
+
+@keyframes open {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+.chat-head {
+  height: 10%;
+  width: 300px;
+  background-color: pink;
+}
+.heading {
+  display: inline;
+  font-size: 12px;
+  color: #fff;
+}
+.chat-head-close {
+  float: right;
+  height: 100%;
+  width: 40px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: 900;
+}
+.chat-body {
+  background-color: rgb(234, 234, 234);
+  height: 78%;
+  padding: 1%;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 15px;
+}
+.chat-body-date {
+  display: block;
+  /* margin-top: 10px; */
+  font-size: 10px;
+  color: white;
+  float: right;
+}
+.chat-body-send {
+    padding: 10px;
+    margin-bottom: 1%;
+    max-width: 60%;
+    min-height: 30px;
+    background-color: lightgreen;
+    margin-left: auto;
+    /* overflow: scroll; */
+    /* overflow-y: hidden; */
+}
+.chat-body-receive {
+    padding: 10px;
+    margin-bottom: 1%;
+    max-width: 60%;
+    min-height: 30px;
+    height: auto;
+    background-color: pink;
+}
+.chat-body-common-message {
+    display: block;
+    background-color: transparent;
+    border: 1px solid red;
+    margin-bottom: 1%;
+}
+.chat-footer {
+    /* position:absolute;
+        bottom: 0%; */
+    /* bottom: 0; */
+    /* margin-top: auto; */
+    bottom: 0;
+    width: 99%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid green;
+}
+.chat-footer-type {
+    height: 90%;
+    width: 85%;
+    border: none;
+}
+.chat-footer-type:focus {
+    outline: none;
+}
+
+.chat-footer-button {
+    width: 13%;
+    height: 90%;
+    background-color: rgb(215, 255, 225);
+    color: green;
+    border: none;
+    font: 1px;
+}
+
+::-webkit-scrollbar {
+     width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
